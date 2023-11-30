@@ -13,6 +13,7 @@ PARSER bis
 
 # Тут указывается класс парсера и метод, который платформа будет вызывать
 # START <название класса парсера> <метод, который должен вернуть список документов>
+INIT webdriver WebDriver
 START BIS content
 
 
@@ -21,6 +22,7 @@ START BIS content
 # ADD FilterOnlyNewDocumentWithDB
 # ADD DownloadDocumentsThroughSeleniumTemp
 # ADD ExtractTextFromFile
+ADD CutJunkCharactersFromDocumentText
 # ADD UploadDocumentToDB
 
 # Такая конфигурация модулей подходит для "Нативных источников"
